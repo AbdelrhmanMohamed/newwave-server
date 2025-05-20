@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "heroes",
+  "info": {
+    "singularName": "hero",
+    "pluralName": "heroes",
+    "displayName": "hero",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Ridding the Crest of Innovation in Events & PR"
+    },
+    "description": {
+      "type": "text",
+      "default": "Pioneering unforgettable experiences in Saudi Arabia and beyond, powered by technology and visionary expertise.",
+      "required": true
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "highlight_text": {
+      "type": "string"
+    }
+  }
+}
