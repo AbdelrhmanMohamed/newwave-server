@@ -1,0 +1,95 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_us_pages",
+  "info": {
+    "singularName": "contact-us-page",
+    "pluralName": "contact-us-pages",
+    "displayName": "Contact Us Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "header_title": {
+      "type": "string"
+    },
+    "header_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "response_time_title": {
+      "type": "string",
+      "required": true
+    },
+    "response_time_description": {
+      "type": "string",
+      "required": true
+    },
+    "say_hello_title": {
+      "type": "string"
+    },
+    "say_hello_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "enquiries_title": {
+      "type": "string"
+    },
+    "enquiries_emails_1": {
+      "type": "email"
+    },
+    "enquiries_emails_2": {
+      "type": "email"
+    },
+    "working_hours": {
+      "type": "string"
+    },
+    "branches_title": {
+      "type": "string"
+    },
+    "branches_description": {
+      "type": "text"
+    },
+    "branches": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::branch.branch"
+    },
+    "social_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-link.social-link"
+    },
+    "response_time_icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "say_hello_description": {
+      "type": "string"
+    },
+    "contact_form_title": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_location2s",
+  "info": {
+    "displayName": "location2",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "lat": {
+      "type": "decimal"
+    },
+    "lng": {
+      "type": "decimal"
+    }
+  }
+}

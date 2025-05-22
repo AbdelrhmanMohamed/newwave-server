@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "branches",
+  "info": {
+    "singularName": "branch",
+    "pluralName": "branches",
+    "displayName": "Branch",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text",
+      "maxLength": 500,
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "location": {
+      "displayName": "location2",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.location2"
+    },
+    "is_main": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}

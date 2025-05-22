@@ -1,5 +1,29 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedLocation extends Struct.ComponentSchema {
+  collectionName: 'components_shared_locations';
+  info: {
+    displayName: 'location';
+    icon: 'pinMap';
+  };
+  attributes: {
+    lat: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    lng: Schema.Attribute.Decimal & Schema.Attribute.Required;
+  };
+}
+
+export interface SharedLocation2 extends Struct.ComponentSchema {
+  collectionName: 'components_shared_location2s';
+  info: {
+    displayName: 'location2';
+    icon: 'earth';
+  };
+  attributes: {
+    lat: Schema.Attribute.Decimal;
+    lng: Schema.Attribute.Decimal;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -65,6 +89,8 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.location': SharedLocation;
+      'shared.location2': SharedLocation2;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

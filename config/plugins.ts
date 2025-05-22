@@ -5,6 +5,10 @@ module.exports = ({ env }) => ({
     },
   },
 
+  seo: {
+    enabled: true,
+  },
+
   email: {
     config: {
       provider: "strapi-provider-email-smtp",
