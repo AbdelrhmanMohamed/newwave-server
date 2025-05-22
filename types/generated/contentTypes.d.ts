@@ -396,6 +396,7 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     subjects: Schema.Attribute.Component<'blog.subject', true>;
     title: Schema.Attribute.String &
@@ -424,10 +425,10 @@ export interface ApiBranchBranch extends Struct.CollectionTypeSchema {
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 500;
       }>;
+    cover: Schema.Attribute.Media<'images' | 'files'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    DDDD: Schema.Attribute.RichText;
     email: Schema.Attribute.Email;
     is_main: Schema.Attribute.Boolean;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -437,7 +438,7 @@ export interface ApiBranchBranch extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     location: Schema.Attribute.Component<'shared.location2', false>;
-    name: Schema.Attribute.String;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', true>;
     tel: Schema.Attribute.String;
@@ -471,7 +472,6 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
     enquiries_title: Schema.Attribute.String;
     header_cover: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
-    header_title: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -483,7 +483,6 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
       Schema.Attribute.Required;
     response_time_icon: Schema.Attribute.Media<'files' | 'images'>;
     response_time_title: Schema.Attribute.String & Schema.Attribute.Required;
-    say_hello_description: Schema.Attribute.String;
     say_hello_image: Schema.Attribute.Media<'images' | 'files'>;
     say_hello_title: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -605,6 +604,7 @@ export interface ApiHeroHero extends Struct.SingleTypeSchema {
 export interface ApiSocialLinkSocialLink extends Struct.CollectionTypeSchema {
   collectionName: 'social_links';
   info: {
+    description: '';
     displayName: 'Social Link';
     pluralName: 'social-links';
     singularName: 'social-link';
@@ -613,11 +613,12 @@ export interface ApiSocialLinkSocialLink extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    active: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    icon: Schema.Attribute.Media<'files' | 'images'> &
-      Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

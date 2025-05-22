@@ -4,7 +4,8 @@
   "info": {
     "singularName": "social-link",
     "pluralName": "social-links",
-    "displayName": "Social Link"
+    "displayName": "Social Link",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,13 +19,9 @@
       "type": "string",
       "required": true
     },
-    "icon": {
-      "allowedTypes": [
-        "files",
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
+    "active": {
+      "type": "boolean",
+      "default": true,
       "required": true
     }
   }

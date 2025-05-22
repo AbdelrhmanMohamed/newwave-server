@@ -11,17 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "header_title": {
-      "type": "string"
-    },
     "header_cover": {
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
+      "allowedTypes": ["images", "files"]
     },
     "response_time_title": {
       "type": "string",
@@ -31,17 +25,21 @@
       "type": "string",
       "required": true
     },
+    "contact_form_title": {
+      "type": "string"
+    },
+
     "say_hello_title": {
+      "type": "string"
+    },
+    "say_hello_description": {
       "type": "string"
     },
     "say_hello_image": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
+      "allowedTypes": ["images", "files"]
     },
     "enquiries_title": {
       "type": "string"
@@ -75,17 +73,9 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "files",
-        "images"
-      ]
+      "allowedTypes": ["files", "images"]
     },
-    "say_hello_description": {
-      "type": "string"
-    },
-    "contact_form_title": {
-      "type": "string"
-    },
+
     "seo": {
       "type": "component",
       "repeatable": false,

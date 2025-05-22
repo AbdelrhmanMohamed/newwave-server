@@ -12,7 +12,8 @@
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "address": {
       "type": "text",
@@ -39,8 +40,14 @@
       "repeatable": true,
       "component": "shared.seo"
     },
-    "DDDD": {
-      "type": "richtext"
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     }
   }
 }
