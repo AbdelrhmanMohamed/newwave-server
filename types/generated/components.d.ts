@@ -1,5 +1,18 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BlogSubject extends Struct.ComponentSchema {
+  collectionName: 'components_blog_subjects';
+  info: {
+    displayName: 'Subject';
+    icon: 'italic';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    images: Schema.Attribute.Media<'images' | 'files', true>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedLocation extends Struct.ComponentSchema {
   collectionName: 'components_shared_locations';
   info: {
@@ -89,6 +102,7 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'blog.subject': BlogSubject;
       'shared.location': SharedLocation;
       'shared.location2': SharedLocation2;
       'shared.media': SharedMedia;

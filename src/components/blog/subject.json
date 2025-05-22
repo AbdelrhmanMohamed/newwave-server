@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blog_subjects",
+  "info": {
+    "displayName": "Subject",
+    "icon": "italic"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "blocks",
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
