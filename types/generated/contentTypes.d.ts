@@ -373,6 +373,36 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiBlogPageBlogPage extends Struct.SingleTypeSchema {
+  collectionName: 'blog_pages';
+  info: {
+    description: '';
+    displayName: 'Blog Page';
+    pluralName: 'blog-pages';
+    singularName: 'blog-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-page.blog-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    titel: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   collectionName: 'blogs';
   info: {
@@ -484,7 +514,8 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
     response_time_icon: Schema.Attribute.Media<'files' | 'images'>;
     response_time_title: Schema.Attribute.String & Schema.Attribute.Required;
     say_hello_image: Schema.Attribute.Media<'images' | 'files'>;
-    say_hello_title: Schema.Attribute.String;
+    say_hello_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Say Hello!'>;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     social_links: Schema.Attribute.Relation<
       'oneToMany',
@@ -1171,6 +1202,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::blog-page.blog-page': ApiBlogPageBlogPage;
       'api::blog.blog': ApiBlogBlog;
       'api::branch.branch': ApiBranchBranch;
       'api::contact-us-page.contact-us-page': ApiContactUsPageContactUsPage;
