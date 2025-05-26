@@ -7,7 +7,7 @@ export default {
 
     try {
       await strapi.plugins["email"].services.email.send({
-        to: "info@newwave.net",
+        to: "info@newwav.net",
         from: result.email,
         subject: subject,
         html: `<html

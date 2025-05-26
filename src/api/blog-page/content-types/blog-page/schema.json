@@ -14,6 +14,11 @@
     "titel": {
       "type": "string"
     },
+    "cover": {
+      "allowedTypes": ["images", "files"],
+      "type": "media",
+      "multiple": false
+    },
     "seo": {
       "type": "component",
       "repeatable": false,
