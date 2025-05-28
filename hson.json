@@ -1,0 +1,1658 @@
+{
+  "id": "1e1f8a6b-d6a8-4064-97e3-3c96cdad0212",
+  "offsetX": 879.3627874554196,
+  "offsetY": 290.7592774245263,
+  "zoom": 90,
+  "gridSize": 0,
+  "layers": [
+    {
+      "id": "d58b8e12-b8ed-4193-83e9-6694a1d68cef",
+      "type": "diagram-links",
+      "isSvg": true,
+      "transformed": true,
+      "models": {
+        "ae74fe91-ac02-4d97-8a83-0803742aee09": {
+          "id": "ae74fe91-ac02-4d97-8a83-0803742aee09",
+          "type": "custom-node",
+          "selected": false,
+          "source": "1",
+          "sourcePort": "3de8b587-8a7d-4386-9f09-de4f1f585f3a",
+          "target": "2",
+          "targetPort": "7f8aafb9-9e47-4910-b1d8-dda5fc454c43",
+          "points": [
+            {
+              "id": "317a6010-b9de-47f3-ba23-24519458a0f8",
+              "type": "point",
+              "x": -862.8593824374454,
+              "y": -49.75779362052978
+            },
+            {
+              "id": "36b08a8e-c6b1-4e07-a640-98a7e235fc5d",
+              "type": "point",
+              "selected": false,
+              "x": -800.8116842102198,
+              "y": -48.33014955426795
+            },
+            {
+              "id": "74a154a4-ba2d-4274-b074-8e752fc0cd1e",
+              "type": "point",
+              "x": -599.2031392191295,
+              "y": -49.53905040221382
+            }
+          ],
+          "labels": [
+            {
+              "id": "2d4b3b9e-520c-4786-9f10-9a17341957c2",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "انشاء الطلب"
+            }
+          ],
+          "width": 3,
+          "color": "#61c031",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "254971ff-dd18-4761-99cb-3785492561e2": {
+          "id": "254971ff-dd18-4761-99cb-3785492561e2",
+          "type": "custom-node",
+          "selected": false,
+          "source": "2",
+          "sourcePort": "28f1ba7b-b17e-4ed4-b854-ebbdf1a6c658",
+          "target": "1",
+          "targetPort": "920d5e09-692a-4c08-99d0-5267cd2f85b2",
+          "points": [
+            {
+              "id": "b0119858-3b0e-413b-9047-ae9d4cb8b037",
+              "type": "point",
+              "x": -518.3593790466034,
+              "y": 90.57032120694417
+            },
+            {
+              "id": "4b2f1448-146d-4e99-aff3-16e43dfff2ff",
+              "type": "point",
+              "selected": false,
+              "x": -486.10388381952424,
+              "y": 91.28228770981183
+            },
+            {
+              "id": "dcd586e6-505f-4e98-a1d5-caeb90af4727",
+              "type": "point",
+              "selected": false,
+              "x": -491.8944166171329,
+              "y": 123.19578236145806
+            },
+            {
+              "id": "b476487a-0189-4212-8720-e548d9df1704",
+              "type": "point",
+              "selected": false,
+              "x": -484.77476170440326,
+              "y": 147.67576493400887
+            },
+            {
+              "id": "da83e88e-6a3e-4828-a610-b7e628690050",
+              "type": "point",
+              "selected": false,
+              "x": -988.4451264884979,
+              "y": 150.58965429740132
+            },
+            {
+              "id": "f2cb7fe6-6ebf-4b86-ba3d-18e319743844",
+              "type": "point",
+              "selected": false,
+              "x": -986.5313887286286,
+              "y": 11.206774240885867
+            },
+            {
+              "id": "953bab7f-c727-40e3-9594-3c888bcd9da6",
+              "type": "point",
+              "x": -943.7031256557614,
+              "y": 10.28906781610216
+            }
+          ],
+          "labels": [
+            {
+              "id": "d888ab5c-cd93-4090-a14a-057220219c77",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "استكمال الطلب"
+            }
+          ],
+          "width": 3,
+          "color": "#adb5bd",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "fa684f80-4e5e-4d11-8295-e6431b7d5cf9": {
+          "id": "fa684f80-4e5e-4d11-8295-e6431b7d5cf9",
+          "type": "custom-node",
+          "selected": false,
+          "source": "2",
+          "sourcePort": "7e1d4651-d00f-4266-975e-ea83b9f7e6fc",
+          "target": "4",
+          "targetPort": "d31e0681-00f0-44a5-b01c-c03ecfded295",
+          "points": [
+            {
+              "id": "947ea740-c374-486b-a1c1-81396cf4ef0b",
+              "type": "point",
+              "x": -518.3593790466034,
+              "y": -49.53905040221382
+            },
+            {
+              "id": "f722a1c6-8547-4efd-b427-cf5bb7fb5d85",
+              "type": "point",
+              "x": -205.4844027824975,
+              "y": -51.55466862052978
+            }
+          ],
+          "labels": [
+            {
+              "id": "d8a3d14e-e74b-4650-af72-993b351250e5",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "حافظة سداد رسوم المعاينة"
+            }
+          ],
+          "width": 3,
+          "color": "#adb5bd",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "b3b73190-c1e2-401d-9e5a-9430dd655a0b": {
+          "id": "b3b73190-c1e2-401d-9e5a-9430dd655a0b",
+          "type": "custom-node",
+          "selected": false,
+          "source": "4",
+          "sourcePort": "d0ec92cc-46fd-4465-a7bc-80cd8c8a1f9b",
+          "target": "2",
+          "targetPort": "b7ec610c-4a7d-4078-81d4-a2da310ebf19",
+          "points": [
+            {
+              "id": "46782daa-c1eb-4e51-8726-54be8bb102f0",
+              "type": "point",
+              "x": -124.64065956418152,
+              "y": -31.539036838845757
+            },
+            {
+              "id": "4e263b9d-143d-4e61-b70e-6bc08c59b33e",
+              "type": "point",
+              "selected": false,
+              "x": -82.87434278269484,
+              "y": -32.028505049370374
+            },
+            {
+              "id": "745cf71d-7500-4d64-b6c3-f043c9c68b21",
+              "type": "point",
+              "selected": false,
+              "x": -83.01089998483009,
+              "y": -117.37207461329047
+            },
+            {
+              "id": "55ee163b-0f96-46c1-808e-e9c729ac27e1",
+              "type": "point",
+              "selected": false,
+              "x": -644.5645494013389,
+              "y": -118.70119672841133
+            },
+            {
+              "id": "83cd6858-3dd9-4fc7-9756-51083c9f5b67",
+              "type": "point",
+              "selected": false,
+              "x": -644.4279921992036,
+              "y": -27.992706338518207
+            },
+            {
+              "id": "ac466c68-7a83-43b7-9301-2947fc23110d",
+              "type": "point",
+              "x": -599.2031392191295,
+              "y": -29.523418620529785
+            }
+          ],
+          "labels": [
+            {
+              "id": "e29b0c73-69e8-4d70-b528-7b0034f53253",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "دفع رسوم المعاينة"
+            }
+          ],
+          "width": 3,
+          "color": "#00b9e2",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "7215fe43-28b0-4f09-b14c-a960b3b3e5c2": {
+          "id": "7215fe43-28b0-4f09-b14c-a960b3b3e5c2",
+          "type": "custom-node",
+          "selected": false,
+          "source": "3",
+          "sourcePort": "929888d4-7b25-45b4-acbd-c9df412c1e1c",
+          "target": "6",
+          "targetPort": "66b8aa67-ad30-483f-9ca3-17270ea00e68",
+          "points": [
+            {
+              "id": "652750ab-fb14-44d7-a489-a0de351c61b2",
+              "type": "point",
+              "x": 81.78125612592262,
+              "y": 88.14844620694417
+            },
+            {
+              "id": "a0095d75-a240-45b3-b276-ff1ad30eab3b",
+              "type": "point",
+              "x": 285.65624256255455,
+              "y": 91.16405764357611
+            }
+          ],
+          "labels": [
+            {
+              "id": "4ef6d8e4-2f95-44a5-890f-f5fd9e4c33e8",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "اجراء المعاينة "
+            }
+          ],
+          "width": 3,
+          "color": "#adb5bd",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "a9feed17-1c4f-4c1e-bf89-04e4be48dcc5": {
+          "id": "a9feed17-1c4f-4c1e-bf89-04e4be48dcc5",
+          "type": "custom-node",
+          "selected": false,
+          "source": "6",
+          "sourcePort": "a770102d-62e1-406a-9492-de4018234f69",
+          "target": "3",
+          "targetPort": "ec60ceb3-b8c3-47e5-bf53-2fa603ee610c",
+          "points": [
+            {
+              "id": "33d36770-0af2-4a93-a6ef-c703b4322b17",
+              "type": "point",
+              "x": 439.3593133090823,
+              "y": 111.17968942526014
+            },
+            {
+              "id": "39c230ae-63f2-4c7f-a218-146ab454caba",
+              "type": "point",
+              "selected": false,
+              "x": 476.7782109505787,
+              "y": 111.72141271912948
+            },
+            {
+              "id": "6749f32b-33fa-4208-b652-eb8ed11cccdf",
+              "type": "point",
+              "selected": false,
+              "x": 476.8402645916166,
+              "y": 186.59192716470562
+            },
+            {
+              "id": "52386471-d297-4394-af2a-a04b1756fd3a",
+              "type": "point",
+              "selected": false,
+              "x": -45.08538844812127,
+              "y": 188.6046400076279
+            },
+            {
+              "id": "0eea1e69-a7d3-48c5-a2d0-36a770778c8b",
+              "type": "point",
+              "selected": false,
+              "x": -44.276900138245026,
+              "y": 108.69749709270124
+            },
+            {
+              "id": "32f2d9d3-c7d3-4c37-905d-ab954986b5d1",
+              "type": "point",
+              "x": 0.9374789991865224,
+              "y": 108.16407798862821
+            }
+          ],
+          "labels": [
+            {
+              "id": "805c8701-7d4e-450c-bcb4-42106a6d7d02",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "تسليم نموذج المعاينة"
+            }
+          ],
+          "width": 3,
+          "color": "#adb5bd",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "886b9a47-1995-48f3-8640-70066e32d71a": {
+          "id": "886b9a47-1995-48f3-8640-70066e32d71a",
+          "type": "custom-node",
+          "selected": false,
+          "source": "3",
+          "sourcePort": "0c87db3a-e093-40c0-aa65-bc53ae1dcc92",
+          "target": "2",
+          "targetPort": "8c33461c-a736-42ab-83b2-3ac875010d68",
+          "points": [
+            {
+              "id": "eec8283a-b241-4ca5-b106-5b89803ca1bc",
+              "type": "point",
+              "x": 81.78125612592262,
+              "y": 108.16407798862821
+            },
+            {
+              "id": "9c9c107b-f6d4-4fbc-b39a-3fdd62658f24",
+              "type": "point",
+              "selected": false,
+              "x": 128.55947283765732,
+              "y": 111.2350205435989
+            },
+            {
+              "id": "fc489dbf-f039-4cd0-83b3-25955e33fec1",
+              "type": "point",
+              "selected": false,
+              "x": 126.32511618896505,
+              "y": 234.74250315204108
+            },
+            {
+              "id": "fc7f0554-f2d9-4735-b0b4-34d1c8dcfb6c",
+              "type": "point",
+              "selected": false,
+              "x": -640.6401268702181,
+              "y": 235.8882853191282
+            },
+            {
+              "id": "371f61aa-3a57-41e2-96e7-944a14079bc1",
+              "type": "point",
+              "selected": false,
+              "x": -643.0777345370085,
+              "y": -9.191783337536755
+            },
+            {
+              "id": "cf9b94a1-db33-49d8-9c9a-b212f9c04b52",
+              "type": "point",
+              "x": -599.2031392191295,
+              "y": -9.507786838845757
+            }
+          ],
+          "labels": [
+            {
+              "id": "8d856f2c-34bd-42c7-b5dd-57087084ff23",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "احتساب رسوم المقايسة"
+            }
+          ],
+          "width": 3,
+          "color": "#b000ff",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "0c9c1f0b-9abc-4e3e-bd29-e938fb9bf6b2": {
+          "id": "0c9c1f0b-9abc-4e3e-bd29-e938fb9bf6b2",
+          "type": "custom-node",
+          "selected": false,
+          "source": "2",
+          "sourcePort": "55e7e45b-c238-4a85-88d0-77e4ed03cce9",
+          "target": "3",
+          "targetPort": "6b11b813-ff3a-4f03-b018-1ac5b07ac97d",
+          "points": [
+            {
+              "id": "4dfe35f3-4acb-4701-8e51-37b7844f0e03",
+              "type": "point",
+              "x": -518.3593790466034,
+              "y": 30.52345977031223
+            },
+            {
+              "id": "8a8ea675-f2d8-4c48-976c-624c53872560",
+              "type": "point",
+              "x": 0.9374789991865224,
+              "y": 88.14844620694417
+            }
+          ],
+          "labels": [
+            {
+              "id": "0f2269df-8582-40ea-a2e3-6809d8888b4d",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "تسجيل الملف"
+            }
+          ],
+          "width": 3,
+          "color": "#adb5bd",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "42c9cf05-012f-49dd-9d47-2fe18f82f45b": {
+          "id": "42c9cf05-012f-49dd-9d47-2fe18f82f45b",
+          "type": "custom-node",
+          "selected": false,
+          "source": "2",
+          "sourcePort": "89498668-cc55-4c0f-a5c1-42f9c28be4d6",
+          "target": "4",
+          "targetPort": "04e8dad8-8dc3-407a-94d8-b5bb91420b7b",
+          "points": [
+            {
+              "id": "cc1ad616-e2be-4140-9a68-5a93460072d5",
+              "type": "point",
+              "x": -518.3593790466034,
+              "y": -9.507786838845757
+            },
+            {
+              "id": "3500f198-636d-4143-8c1d-c22245399e8e",
+              "type": "point",
+              "x": -205.4844027824975,
+              "y": -11.523422011371798
+            }
+          ],
+          "labels": [
+            {
+              "id": "944efb07-b52b-43e6-9229-82238db646a7",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "سداد رسوم المقايسة"
+            }
+          ],
+          "width": 3,
+          "color": "#adb5bd",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "faa346b0-44ac-444b-9e8c-816454ce763a": {
+          "id": "faa346b0-44ac-444b-9e8c-816454ce763a",
+          "type": "custom-node",
+          "selected": false,
+          "source": "4",
+          "sourcePort": "3f7336f5-382d-489d-9b6e-3898d623b2cf",
+          "target": "48",
+          "targetPort": "f9774d6b-6496-4c08-aab9-6ad672a17bbf",
+          "points": [
+            {
+              "id": "062ba402-1a7c-418a-bccf-91ef3a7d366f",
+              "type": "point",
+              "x": -124.64065956418152,
+              "y": -11.523422011371798
+            },
+            {
+              "id": "c76bd3cc-310d-4cb4-ad0d-b143461847a7",
+              "type": "point",
+              "x": 589.0624789991864,
+              "y": -8.52342540221381
+            }
+          ],
+          "labels": [
+            {
+              "id": "a318abdf-d8f5-4ec5-bc72-0696e6eb15c5",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "دفع رسوم المقايسة"
+            }
+          ],
+          "width": 3,
+          "color": "#00b9e2",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "b0dc24c0-09b6-461b-9424-5c339abe106c": {
+          "id": "b0dc24c0-09b6-461b-9424-5c339abe106c",
+          "type": "custom-node",
+          "selected": false,
+          "source": "48",
+          "sourcePort": "1f6bd0b0-2cd9-41fc-be34-8ad623267561",
+          "target": "1",
+          "targetPort": "27f47f60-40df-4002-b6b9-732992397be3",
+          "points": [
+            {
+              "id": "e0f3c017-e415-49f9-800e-78e8432da687",
+              "type": "point",
+              "x": 715.9687425625546,
+              "y": 11.492206379470215
+            },
+            {
+              "id": "a08a58af-29b3-4649-b85d-8c052a81ba24",
+              "type": "point",
+              "selected": false,
+              "x": 776.3991333660534,
+              "y": 13.122560634019024
+            },
+            {
+              "id": "a1027a07-7034-4e56-894a-90d21ed073ba",
+              "type": "point",
+              "selected": false,
+              "x": 778.591309751958,
+              "y": 260.6664075646247
+            },
+            {
+              "id": "98128069-b4e0-4536-9c65-7a92ffddbd23",
+              "type": "point",
+              "selected": false,
+              "x": -1020.3726678160994,
+              "y": 265.4457039676537
+            },
+            {
+              "id": "e891a8c6-30d6-425a-9441-55478f73acc2",
+              "type": "point",
+              "selected": false,
+              "x": -1017.4037892088684,
+              "y": -27.823742169234002
+            },
+            {
+              "id": "214507ed-e4e7-4977-84c7-f4e54a1e5c40",
+              "type": "point",
+              "x": -943.7031256557614,
+              "y": -29.742161838845757
+            }
+          ],
+          "labels": [
+            {
+              "id": "c399e9ca-1c5c-4840-8bdc-8fa8c0e189b7",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "تغيير عدد الوحدات"
+            }
+          ],
+          "width": 3,
+          "color": "#ee3a65",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "9c6c9536-7a71-4914-9632-4c3e334d5b1c": {
+          "id": "9c6c9536-7a71-4914-9632-4c3e334d5b1c",
+          "type": "custom-node",
+          "selected": false,
+          "source": "2",
+          "sourcePort": "41e5d5f0-ea01-42ce-b17e-39d39414a42a",
+          "target": "2",
+          "targetPort": "d3b0f057-f037-4220-8fea-1232803b0ade",
+          "points": [
+            {
+              "id": "ce4241d0-c7a2-4db3-bc50-8ae9653f5e4f",
+              "type": "point",
+              "x": -518.3593790466034,
+              "y": 50.539057643576115
+            },
+            {
+              "id": "5a7ddfe1-b511-45f3-b53a-3be551bde204",
+              "type": "point",
+              "selected": false,
+              "x": -484.7742825040538,
+              "y": 51.7164026922818
+            },
+            {
+              "id": "e202ade1-a576-49e1-8d7a-612527f19bc5",
+              "type": "point",
+              "selected": false,
+              "x": -482.19063150464723,
+              "y": -156.26750275994945
+            },
+            {
+              "id": "c10e1611-3eea-4ef6-9197-09e67ca97b77",
+              "type": "point",
+              "selected": false,
+              "x": -675.9644564601422,
+              "y": -156.26750275994942
+            },
+            {
+              "id": "9b7cf636-c778-4247-8f0a-96ff727549b0",
+              "type": "point",
+              "selected": false,
+              "x": -673.3808054607355,
+              "y": 53.0082281919851
+            },
+            {
+              "id": "04416b22-9cdd-4f2c-866b-2b455a8e646a",
+              "type": "point",
+              "selected": true,
+              "x": -599.2031392191295,
+              "y": 50.539057643576115
+            }
+          ],
+          "labels": [
+            {
+              "id": "d0674d26-bc09-4300-b0fb-249bd7d81df5",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "معاينة مياة"
+            }
+          ],
+          "width": 3,
+          "color": "#b000ff",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "72418970-8ec3-43ae-9af1-b926ffa56649": {
+          "id": "72418970-8ec3-43ae-9af1-b926ffa56649",
+          "type": "custom-node",
+          "selected": false,
+          "source": "2",
+          "sourcePort": "5a834590-2ce8-4719-8f66-62caf6d51a70",
+          "target": "2",
+          "targetPort": "e0feb05e-47b0-4487-8b51-bd8f3ee39e13",
+          "points": [
+            {
+              "id": "4d74d51b-98df-4f99-8171-fdfb5b610f32",
+              "type": "point",
+              "x": -518.3593790466034,
+              "y": 70.55468942526014
+            },
+            {
+              "id": "6087b762-fa68-4d17-a0d3-acfb9e5834db",
+              "type": "point",
+              "selected": false,
+              "x": -448.6031685123614,
+              "y": 71.0937851878313
+            },
+            {
+              "id": "d8044041-f321-4d8f-b81d-b44c032c1b0b",
+              "type": "point",
+              "selected": false,
+              "x": -447.3113430126581,
+              "y": -189.85496575223522
+            },
+            {
+              "id": "7c1095a1-54b4-4de8-b5e1-2284c55ea05d",
+              "type": "point",
+              "selected": false,
+              "x": -709.5519194524279,
+              "y": -189.85496575223524
+            },
+            {
+              "id": "3ccb9802-4b17-4388-a3bf-c1bdaadcf068",
+              "type": "point",
+              "selected": false,
+              "x": -710.8437449521311,
+              "y": 69.801959688128
+            },
+            {
+              "id": "b9699ec8-d6ec-463f-baee-741e8c3ae2bd",
+              "type": "point",
+              "selected": true,
+              "x": -599.2031392191295,
+              "y": 70.55468942526014
+            }
+          ],
+          "labels": [
+            {
+              "id": "ca19dfa3-26cb-43b9-a59d-c17ffd9e3bbe",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "مراجعة المعاينة"
+            }
+          ],
+          "width": 3,
+          "color": "#b000ff",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "0f9936f1-13a7-46c7-a68d-ccc98e64414f": {
+          "id": "0f9936f1-13a7-46c7-a68d-ccc98e64414f",
+          "type": "custom-node",
+          "selected": false,
+          "source": "2",
+          "sourcePort": "7ada9dc2-66fb-463c-8658-57574067569e",
+          "target": "3",
+          "targetPort": "906477e4-6ebc-452a-9822-5b2827448cff",
+          "points": [
+            {
+              "id": "955713c3-96ad-4077-8f0e-b12924b41a39",
+              "type": "point",
+              "x": -518.3593790466034,
+              "y": 110.58595298862821
+            },
+            {
+              "id": "b038df2d-12b9-4159-816c-c579ab39c784",
+              "type": "point",
+              "x": 0.9374789991865224,
+              "y": 128.17970977031223
+            }
+          ],
+          "labels": [
+            {
+              "id": "6c7615af-1b49-4f0a-806f-c97cfafe9af6",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "مراجعة المقايسة"
+            }
+          ],
+          "width": 3,
+          "color": "#b000ff",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        },
+        "b43e6496-0930-4ae8-81f4-fa340475910e": {
+          "id": "b43e6496-0930-4ae8-81f4-fa340475910e",
+          "type": "custom-node",
+          "selected": false,
+          "source": "48",
+          "sourcePort": "ac3f59bd-aa60-45cf-84f1-54b3ca56f03e",
+          "target": "48",
+          "targetPort": "15055828-8864-41cf-a3c6-a3e42455aa7f",
+          "points": [
+            {
+              "id": "679f9850-808d-41af-9767-7070dd230aa5",
+              "type": "point",
+              "x": 715.9687425625546,
+              "y": 31.507855115364315
+            },
+            {
+              "id": "1e5af03e-8975-47ce-8e25-706f8245e98d",
+              "type": "point",
+              "selected": false,
+              "x": 876.994472271756,
+              "y": 32.08467125034695
+            },
+            {
+              "id": "9a115063-617b-4b1d-9407-9c00ad79592c",
+              "type": "point",
+              "selected": false,
+              "x": 878.105583382867,
+              "y": 148.75133791701361
+            },
+            {
+              "id": "2d1ba051-e926-43fb-8c95-b51c8ea41b44",
+              "type": "point",
+              "selected": false,
+              "x": 573.6611389384226,
+              "y": 148.75133791701361
+            },
+            {
+              "id": "d11ae24b-0dca-462a-96bd-8d71453a7b67",
+              "type": "point",
+              "selected": false,
+              "x": 556.994472271756,
+              "y": 45.418004583680286
+            },
+            {
+              "id": "37932174-30b3-4f72-94b4-1174428c5642",
+              "type": "point",
+              "selected": true,
+              "x": 589.0624789991864,
+              "y": 31.507855115364315
+            }
+          ],
+          "labels": [
+            {
+              "id": "7147cab5-138b-4899-814c-85eabfe0e3c5",
+              "type": "custom-node",
+              "offsetX": 0,
+              "offsetY": 0,
+              "value": "تم السداد"
+            }
+          ],
+          "width": 3,
+          "color": "#b000ff",
+          "curvyness": 50,
+          "selectedColor": "#dfc166"
+        }
+      }
+    },
+    {
+      "id": "b217c205-0269-4b52-8176-6a3c6482f0d8",
+      "type": "diagram-nodes",
+      "isSvg": false,
+      "transformed": true,
+      "models": {
+        "1": {
+          "id": "1",
+          "type": "custom-node",
+          "selected": false,
+          "x": -953.7069388963516,
+          "y": -92.64845077025248,
+          "ports": [
+            {
+              "id": "0daeb38c-4aed-4af9-99d5-dd6c822c8a32",
+              "type": "custom-node",
+              "x": -951.7031053107092,
+              "y": -59.7656095113718,
+              "name": "in-1",
+              "alignment": "left",
+              "parentNode": "1",
+              "links": [],
+              "in": true,
+              "label": "in-1"
+            },
+            {
+              "id": "3de8b587-8a7d-4386-9f09-de4f1f585f3a",
+              "type": "custom-node",
+              "x": -870.8593960008135,
+              "y": -59.7656095113718,
+              "name": "out-1",
+              "alignment": "right",
+              "parentNode": "1",
+              "links": [
+                "ae74fe91-ac02-4d97-8a83-0803742aee09"
+              ],
+              "in": false,
+              "label": "out-1"
+            },
+            {
+              "id": "27f47f60-40df-4002-b6b9-732992397be3",
+              "type": "custom-node",
+              "x": -951.7031053107092,
+              "y": -39.74997772968777,
+              "name": "in-2",
+              "alignment": "left",
+              "parentNode": "1",
+              "links": [
+                "b0dc24c0-09b6-461b-9424-5c339abe106c"
+              ],
+              "in": true,
+              "label": "in-2"
+            },
+            {
+              "id": "e45b9eba-bcda-41bf-9eb2-ea46464d1a58",
+              "type": "custom-node",
+              "x": -870.8593960008135,
+              "y": -39.74997772968777,
+              "name": "out-2",
+              "alignment": "right",
+              "parentNode": "1",
+              "links": [],
+              "in": false,
+              "label": "out-2"
+            },
+            {
+              "id": "7d617b08-3187-4f54-b057-b6562ff36a94",
+              "type": "custom-node",
+              "x": -951.7031053107092,
+              "y": -19.734345948003742,
+              "name": "in-3",
+              "alignment": "left",
+              "parentNode": "1",
+              "links": [],
+              "in": true,
+              "label": "in-3"
+            },
+            {
+              "id": "d5d57b0f-ee7f-4235-8283-fe9136e398d6",
+              "type": "custom-node",
+              "x": -870.8593960008135,
+              "y": -19.734345948003742,
+              "name": "out-3",
+              "alignment": "right",
+              "parentNode": "1",
+              "links": [],
+              "in": false,
+              "label": "out-3"
+            },
+            {
+              "id": "920d5e09-692a-4c08-99d0-5267cd2f85b2",
+              "type": "custom-node",
+              "x": -951.7031053107092,
+              "y": 0.2812519252601457,
+              "name": "in-4",
+              "alignment": "left",
+              "parentNode": "1",
+              "links": [
+                "254971ff-dd18-4761-99cb-3785492561e2"
+              ],
+              "in": true,
+              "label": "in-4"
+            },
+            {
+              "id": "dfe33ddf-27ed-4a9b-8cb4-54bcb139fb85",
+              "type": "custom-node",
+              "x": -870.8593960008135,
+              "y": 0.2812519252601457,
+              "name": "out-4",
+              "alignment": "right",
+              "parentNode": "1",
+              "links": [],
+              "in": false,
+              "label": "out-4"
+            }
+          ],
+          "name": "العميل",
+          "color": "",
+          "portsInOrder": [
+            "0daeb38c-4aed-4af9-99d5-dd6c822c8a32",
+            "27f47f60-40df-4002-b6b9-732992397be3",
+            "7d617b08-3187-4f54-b057-b6562ff36a94",
+            "920d5e09-692a-4c08-99d0-5267cd2f85b2"
+          ],
+          "portsOutOrder": [
+            "3de8b587-8a7d-4386-9f09-de4f1f585f3a",
+            "e45b9eba-bcda-41bf-9eb2-ea46464d1a58",
+            "d5d57b0f-ee7f-4235-8283-fe9136e398d6",
+            "dfe33ddf-27ed-4a9b-8cb4-54bcb139fb85"
+          ]
+        },
+        "2": {
+          "id": "2",
+          "type": "custom-node",
+          "selected": false,
+          "x": -609.215411789012,
+          "y": -92.43077499420549,
+          "ports": [
+            {
+              "id": "7f8aafb9-9e47-4910-b1d8-dda5fc454c43",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": -59.54686629305583,
+              "name": "in-1",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [
+                "ae74fe91-ac02-4d97-8a83-0803742aee09"
+              ],
+              "in": true,
+              "label": "in-2"
+            },
+            {
+              "id": "7e1d4651-d00f-4266-975e-ea83b9f7e6fc",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": -59.54686629305583,
+              "name": "out-1",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [
+                "fa684f80-4e5e-4d11-8295-e6431b7d5cf9"
+              ],
+              "in": false,
+              "label": "out-2"
+            },
+            {
+              "id": "b7ec610c-4a7d-4078-81d4-a2da310ebf19",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": -39.5312345113718,
+              "name": "in-2",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [
+                "b3b73190-c1e2-401d-9e5a-9430dd655a0b"
+              ],
+              "in": true,
+              "label": "in-2"
+            },
+            {
+              "id": "adcf97ae-11e7-4828-96d7-657994221af7",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": -39.5312345113718,
+              "name": "out-2",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [],
+              "in": false,
+              "label": "out-2"
+            },
+            {
+              "id": "8c33461c-a736-42ab-83b2-3ac875010d68",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": -19.51560272968777,
+              "name": "in-3",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [
+                "886b9a47-1995-48f3-8640-70066e32d71a"
+              ],
+              "in": true,
+              "label": "in-3"
+            },
+            {
+              "id": "89498668-cc55-4c0f-a5c1-42f9c28be4d6",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": -19.51560272968777,
+              "name": "out-3",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [
+                "42c9cf05-012f-49dd-9d47-2fe18f82f45b"
+              ],
+              "in": false,
+              "label": "out-3"
+            },
+            {
+              "id": "9db0a5a7-771b-474b-82a9-ece8d6e49925",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": 0.5000290519962568,
+              "name": "in-4",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [],
+              "in": true,
+              "label": "in-4"
+            },
+            {
+              "id": "69bc46eb-70af-47a2-a401-ad8be0872bc3",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": 0.5000290519962568,
+              "name": "out-4",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [],
+              "in": false,
+              "label": "out-4"
+            },
+            {
+              "id": "b07f104a-a5bb-4272-b973-05b49499032c",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": 20.515660833680283,
+              "name": "in-5",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [],
+              "in": true,
+              "label": "in-5"
+            },
+            {
+              "id": "55e7e45b-c238-4a85-88d0-77e4ed03cce9",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": 20.515660833680283,
+              "name": "out-5",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [
+                "0c9c1f0b-9abc-4e3e-bd29-e938fb9bf6b2"
+              ],
+              "in": false,
+              "label": "out-5"
+            },
+            {
+              "id": "d3b0f057-f037-4220-8fea-1232803b0ade",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": 40.53125870694417,
+              "name": "in-6",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [
+                "9c6c9536-7a71-4914-9632-4c3e334d5b1c"
+              ],
+              "in": true,
+              "label": "in-6"
+            },
+            {
+              "id": "41e5d5f0-ea01-42ce-b17e-39d39414a42a",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": 40.53125870694417,
+              "name": "out-6",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [
+                "9c6c9536-7a71-4914-9632-4c3e334d5b1c"
+              ],
+              "in": false,
+              "label": "out-6"
+            },
+            {
+              "id": "e0feb05e-47b0-4487-8b51-bd8f3ee39e13",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": 60.54685658020806,
+              "name": "in-7",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [
+                "72418970-8ec3-43ae-9af1-b926ffa56649"
+              ],
+              "in": true,
+              "label": "in-7"
+            },
+            {
+              "id": "5a834590-2ce8-4719-8f66-62caf6d51a70",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": 60.54685658020806,
+              "name": "out-7",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [
+                "72418970-8ec3-43ae-9af1-b926ffa56649"
+              ],
+              "in": false,
+              "label": "out-7"
+            },
+            {
+              "id": "86125a73-1103-453f-93f9-044476067b01",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": 80.56252227031223,
+              "name": "in-8",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [],
+              "in": true,
+              "label": "in-8"
+            },
+            {
+              "id": "28f1ba7b-b17e-4ed4-b854-ebbdf1a6c658",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": 80.56252227031223,
+              "name": "out-8",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [
+                "254971ff-dd18-4761-99cb-3785492561e2"
+              ],
+              "in": false,
+              "label": "out-8"
+            },
+            {
+              "id": "a596b030-daad-4821-b67b-d05e9687c83c",
+              "type": "custom-node",
+              "x": -607.2031188740774,
+              "y": 100.57812014357611,
+              "name": "in-9",
+              "alignment": "left",
+              "parentNode": "2",
+              "links": [],
+              "in": true,
+              "label": "in-9"
+            },
+            {
+              "id": "7ada9dc2-66fb-463c-8658-57574067569e",
+              "type": "custom-node",
+              "x": -526.3593756557614,
+              "y": 100.57812014357611,
+              "name": "out-9",
+              "alignment": "right",
+              "parentNode": "2",
+              "links": [
+                "0f9936f1-13a7-46c7-a68d-ccc98e64414f"
+              ],
+              "in": false,
+              "label": "out-9"
+            }
+          ],
+          "name": "خدمة العملاء",
+          "color": "",
+          "portsInOrder": [
+            "7f8aafb9-9e47-4910-b1d8-dda5fc454c43",
+            "b7ec610c-4a7d-4078-81d4-a2da310ebf19",
+            "8c33461c-a736-42ab-83b2-3ac875010d68",
+            "9db0a5a7-771b-474b-82a9-ece8d6e49925",
+            "b07f104a-a5bb-4272-b973-05b49499032c",
+            "d3b0f057-f037-4220-8fea-1232803b0ade",
+            "e0feb05e-47b0-4487-8b51-bd8f3ee39e13",
+            "86125a73-1103-453f-93f9-044476067b01",
+            "a596b030-daad-4821-b67b-d05e9687c83c"
+          ],
+          "portsOutOrder": [
+            "7e1d4651-d00f-4266-975e-ea83b9f7e6fc",
+            "adcf97ae-11e7-4828-96d7-657994221af7",
+            "89498668-cc55-4c0f-a5c1-42f9c28be4d6",
+            "69bc46eb-70af-47a2-a401-ad8be0872bc3",
+            "55e7e45b-c238-4a85-88d0-77e4ed03cce9",
+            "41e5d5f0-ea01-42ce-b17e-39d39414a42a",
+            "5a834590-2ce8-4719-8f66-62caf6d51a70",
+            "28f1ba7b-b17e-4ed4-b854-ebbdf1a6c658",
+            "7ada9dc2-66fb-463c-8658-57574067569e"
+          ]
+        },
+        "3": {
+          "id": "3",
+          "type": "custom-node",
+          "selected": false,
+          "x": -9.066550260765359,
+          "y": 45.27258860808342,
+          "ports": [
+            {
+              "id": "6b11b813-ff3a-4f03-b018-1ac5b07ac97d",
+              "type": "custom-node",
+              "x": -7.062534564181533,
+              "y": 78.14064727031223,
+              "name": "in-1",
+              "alignment": "left",
+              "parentNode": "3",
+              "links": [
+                "0c9c1f0b-9abc-4e3e-bd29-e938fb9bf6b2"
+              ],
+              "in": true,
+              "label": "in-6"
+            },
+            {
+              "id": "929888d4-7b25-45b4-acbd-c9df412c1e1c",
+              "type": "custom-node",
+              "x": 73.78131037939485,
+              "y": 78.14064727031223,
+              "name": "out-1",
+              "alignment": "right",
+              "parentNode": "3",
+              "links": [
+                "7215fe43-28b0-4f09-b14c-a960b3b3e5c2"
+              ],
+              "in": false,
+              "label": "out-6"
+            },
+            {
+              "id": "ec60ceb3-b8c3-47e5-bf53-2fa603ee610c",
+              "type": "custom-node",
+              "x": -7.062534564181533,
+              "y": 98.15624514357611,
+              "name": "in-2",
+              "alignment": "left",
+              "parentNode": "3",
+              "links": [
+                "a9feed17-1c4f-4c1e-bf89-04e4be48dcc5"
+              ],
+              "in": true,
+              "label": "in-2"
+            },
+            {
+              "id": "0c87db3a-e093-40c0-aa65-bc53ae1dcc92",
+              "type": "custom-node",
+              "x": 73.78131037939485,
+              "y": 98.15624514357611,
+              "name": "out-2",
+              "alignment": "right",
+              "parentNode": "3",
+              "links": [
+                "886b9a47-1995-48f3-8640-70066e32d71a"
+              ],
+              "in": false,
+              "label": "out-2"
+            },
+            {
+              "id": "906477e4-6ebc-452a-9822-5b2827448cff",
+              "type": "custom-node",
+              "x": -7.062534564181533,
+              "y": 118.17191083368029,
+              "name": "in-3",
+              "alignment": "left",
+              "parentNode": "3",
+              "links": [
+                "0f9936f1-13a7-46c7-a68d-ccc98e64414f"
+              ],
+              "in": true,
+              "label": "in-3"
+            },
+            {
+              "id": "5a636c3c-733e-4329-a125-d99beafc5054",
+              "type": "custom-node",
+              "x": 73.78131037939485,
+              "y": 118.17191083368029,
+              "name": "out-3",
+              "alignment": "right",
+              "parentNode": "3",
+              "links": [],
+              "in": false,
+              "label": "out-3"
+            },
+            {
+              "id": "3a4551e9-2759-4eb8-9c08-cb76235fd35c",
+              "type": "custom-node",
+              "x": -7.062534564181533,
+              "y": 138.18750870694416,
+              "name": "in-4",
+              "alignment": "left",
+              "parentNode": "3",
+              "links": [],
+              "in": true,
+              "label": "in-4"
+            },
+            {
+              "id": "8ff9e1cb-b5c3-4b77-8249-533eb843dac6",
+              "type": "custom-node",
+              "x": 73.78131037939485,
+              "y": 138.18750870694416,
+              "name": "out-4",
+              "alignment": "right",
+              "parentNode": "3",
+              "links": [],
+              "in": false,
+              "label": "out-4"
+            }
+          ],
+          "name": "الإشتراكات",
+          "color": "",
+          "portsInOrder": [
+            "6b11b813-ff3a-4f03-b018-1ac5b07ac97d",
+            "ec60ceb3-b8c3-47e5-bf53-2fa603ee610c",
+            "906477e4-6ebc-452a-9822-5b2827448cff",
+            "3a4551e9-2759-4eb8-9c08-cb76235fd35c"
+          ],
+          "portsOutOrder": [
+            "929888d4-7b25-45b4-acbd-c9df412c1e1c",
+            "0c87db3a-e093-40c0-aa65-bc53ae1dcc92",
+            "5a636c3c-733e-4329-a125-d99beafc5054",
+            "8ff9e1cb-b5c3-4b77-8249-533eb843dac6"
+          ]
+        },
+        "4": {
+          "id": "4",
+          "type": "custom-node",
+          "selected": false,
+          "x": -215.48512010509373,
+          "y": -94.44945510703077,
+          "ports": [
+            {
+              "id": "d31e0681-00f0-44a5-b01c-c03ecfded295",
+              "type": "custom-node",
+              "x": -213.48438243744542,
+              "y": -61.5624845113718,
+              "name": "in-1",
+              "alignment": "left",
+              "parentNode": "4",
+              "links": [
+                "fa684f80-4e5e-4d11-8295-e6431b7d5cf9"
+              ],
+              "in": true,
+              "label": "in-6"
+            },
+            {
+              "id": "6fe24030-ded3-43a3-9020-3412e941f7f4",
+              "type": "custom-node",
+              "x": -132.64067312754958,
+              "y": -61.5624845113718,
+              "name": "out-1",
+              "alignment": "right",
+              "parentNode": "4",
+              "links": [],
+              "in": false,
+              "label": "out-6"
+            },
+            {
+              "id": "60e203ae-4f6e-492e-97b5-2390915b75d6",
+              "type": "custom-node",
+              "x": -213.48438243744542,
+              "y": -41.54685272968777,
+              "name": "in-2",
+              "alignment": "left",
+              "parentNode": "4",
+              "links": [],
+              "in": true,
+              "label": "in-2"
+            },
+            {
+              "id": "d0ec92cc-46fd-4465-a7bc-80cd8c8a1f9b",
+              "type": "custom-node",
+              "x": -132.64067312754958,
+              "y": -41.54685272968777,
+              "name": "out-2",
+              "alignment": "right",
+              "parentNode": "4",
+              "links": [
+                "b3b73190-c1e2-401d-9e5a-9430dd655a0b"
+              ],
+              "in": false,
+              "label": "out-2"
+            },
+            {
+              "id": "04e8dad8-8dc3-407a-94d8-b5bb91420b7b",
+              "type": "custom-node",
+              "x": -213.48438243744542,
+              "y": -21.531220948003742,
+              "name": "in-3",
+              "alignment": "left",
+              "parentNode": "4",
+              "links": [
+                "42c9cf05-012f-49dd-9d47-2fe18f82f45b"
+              ],
+              "in": true,
+              "label": "in-3"
+            },
+            {
+              "id": "3f7336f5-382d-489d-9b6e-3898d623b2cf",
+              "type": "custom-node",
+              "x": -132.64067312754958,
+              "y": -21.531220948003742,
+              "name": "out-3",
+              "alignment": "right",
+              "parentNode": "4",
+              "links": [
+                "faa346b0-44ac-444b-9e8c-816454ce763a"
+              ],
+              "in": false,
+              "label": "out-3"
+            },
+            {
+              "id": "0934a332-db05-425d-b5bf-804330200457",
+              "type": "custom-node",
+              "x": -213.48438243744542,
+              "y": -1.5156230747398542,
+              "name": "in-4",
+              "alignment": "left",
+              "parentNode": "4",
+              "links": [],
+              "in": true,
+              "label": "in-4"
+            },
+            {
+              "id": "a6b969b5-3905-4a9d-9945-526624fd571e",
+              "type": "custom-node",
+              "x": -132.64067312754958,
+              "y": -1.5156230747398542,
+              "name": "out-4",
+              "alignment": "right",
+              "parentNode": "4",
+              "links": [],
+              "in": false,
+              "label": "out-4"
+            }
+          ],
+          "name": "الخزينة",
+          "color": "",
+          "portsInOrder": [
+            "d31e0681-00f0-44a5-b01c-c03ecfded295",
+            "60e203ae-4f6e-492e-97b5-2390915b75d6",
+            "04e8dad8-8dc3-407a-94d8-b5bb91420b7b",
+            "0934a332-db05-425d-b5bf-804330200457"
+          ],
+          "portsOutOrder": [
+            "6fe24030-ded3-43a3-9020-3412e941f7f4",
+            "d0ec92cc-46fd-4465-a7bc-80cd8c8a1f9b",
+            "3f7336f5-382d-489d-9b6e-3898d623b2cf",
+            "a6b969b5-3905-4a9d-9945-526624fd571e"
+          ]
+        },
+        "6": {
+          "id": "6",
+          "type": "custom-node",
+          "selected": false,
+          "x": 275.66722268445926,
+          "y": 48.28893649661355,
+          "ports": [
+            {
+              "id": "66b8aa67-ad30-483f-9ca3-17270ea00e68",
+              "type": "custom-node",
+              "x": 277.6562289991865,
+              "y": 81.15625870694417,
+              "name": "in-1",
+              "alignment": "left",
+              "parentNode": "6",
+              "links": [
+                "7215fe43-28b0-4f09-b14c-a960b3b3e5c2"
+              ],
+              "in": true,
+              "label": "in-4"
+            },
+            {
+              "id": "28c0dad4-def8-446f-86ef-9e55661d5a7b",
+              "type": "custom-node",
+              "x": 431.3592997457143,
+              "y": 81.15625870694417,
+              "name": "out-1",
+              "alignment": "right",
+              "parentNode": "6",
+              "links": [],
+              "in": false,
+              "label": "out-4"
+            },
+            {
+              "id": "fcca01c0-b1c5-47b0-b01f-38a7a43a4720",
+              "type": "custom-node",
+              "x": 277.6562289991865,
+              "y": 101.17185658020806,
+              "name": "in-2",
+              "alignment": "left",
+              "parentNode": "6",
+              "links": [],
+              "in": true,
+              "label": "in-2"
+            },
+            {
+              "id": "a770102d-62e1-406a-9492-de4018234f69",
+              "type": "custom-node",
+              "x": 431.3592997457143,
+              "y": 101.17185658020806,
+              "name": "out-2",
+              "alignment": "right",
+              "parentNode": "6",
+              "links": [
+                "a9feed17-1c4f-4c1e-bf89-04e4be48dcc5"
+              ],
+              "in": false,
+              "label": "out-2"
+            },
+            {
+              "id": "e0bff6b5-28fd-4faf-a9ad-1643a66d238a",
+              "type": "custom-node",
+              "x": 277.6562289991865,
+              "y": 121.18752227031223,
+              "name": "in-3",
+              "alignment": "left",
+              "parentNode": "6",
+              "links": [],
+              "in": true,
+              "label": "in-3"
+            },
+            {
+              "id": "57c4b3c5-a498-43db-abca-10606b639e94",
+              "type": "custom-node",
+              "x": 431.3592997457143,
+              "y": 121.18752227031223,
+              "name": "out-3",
+              "alignment": "right",
+              "parentNode": "6",
+              "links": [],
+              "in": false,
+              "label": "out-3"
+            }
+          ],
+          "name": "الادارة الهندسية - الشبكات",
+          "color": "",
+          "portsInOrder": [
+            "66b8aa67-ad30-483f-9ca3-17270ea00e68",
+            "fcca01c0-b1c5-47b0-b01f-38a7a43a4720",
+            "e0bff6b5-28fd-4faf-a9ad-1643a66d238a"
+          ],
+          "portsOutOrder": [
+            "28c0dad4-def8-446f-86ef-9e55661d5a7b",
+            "a770102d-62e1-406a-9492-de4018234f69",
+            "57c4b3c5-a498-43db-abca-10606b639e94"
+          ]
+        },
+        "48": {
+          "id": "48",
+          "type": "custom-node",
+          "selected": false,
+          "x": 579.0674112176415,
+          "y": -51.4189056523939,
+          "ports": [
+            {
+              "id": "f9774d6b-6496-4c08-aab9-6ad672a17bbf",
+              "type": "custom-node",
+              "x": 581.0623976189781,
+              "y": -18.531241293055825,
+              "name": "in-1",
+              "alignment": "left",
+              "parentNode": "48",
+              "links": [
+                "faa346b0-44ac-444b-9e8c-816454ce763a"
+              ],
+              "in": true,
+              "label": "in-5"
+            },
+            {
+              "id": "a97ffd6c-420a-4be9-a9b9-f0f2bd21c527",
+              "type": "custom-node",
+              "x": 707.9687289991865,
+              "y": -18.531241293055825,
+              "name": "out-1",
+              "alignment": "right",
+              "parentNode": "48",
+              "links": [],
+              "in": false,
+              "label": "out-5"
+            },
+            {
+              "id": "e3b4296e-0942-454b-aa5b-a27f5b01fdc1",
+              "type": "custom-node",
+              "x": 581.0623976189781,
+              "y": 1.484390488628201,
+              "name": "in-2",
+              "alignment": "left",
+              "parentNode": "48",
+              "links": [],
+              "in": true,
+              "label": "in-2"
+            },
+            {
+              "id": "1f6bd0b0-2cd9-41fc-be34-8ad623267561",
+              "type": "custom-node",
+              "x": 707.9687289991865,
+              "y": 1.484390488628201,
+              "name": "out-2",
+              "alignment": "right",
+              "parentNode": "48",
+              "links": [
+                "b0dc24c0-09b6-461b-9424-5c339abe106c"
+              ],
+              "in": false,
+              "label": "out-2"
+            },
+            {
+              "id": "15055828-8864-41cf-a3c6-a3e42455aa7f",
+              "type": "custom-node",
+              "x": 581.0623976189781,
+              "y": 21.50002227031223,
+              "name": "in-3",
+              "alignment": "left",
+              "parentNode": "48",
+              "links": [
+                "b43e6496-0930-4ae8-81f4-fa340475910e"
+              ],
+              "in": true,
+              "label": "in-3"
+            },
+            {
+              "id": "ac3f59bd-aa60-45cf-84f1-54b3ca56f03e",
+              "type": "custom-node",
+              "x": 707.9687289991865,
+              "y": 21.50002227031223,
+              "name": "out-3",
+              "alignment": "right",
+              "parentNode": "48",
+              "links": [
+                "b43e6496-0930-4ae8-81f4-fa340475910e"
+              ],
+              "in": false,
+              "label": "out-3"
+            }
+          ],
+          "name": "الاصدار والحاسب الالي",
+          "color": "",
+          "portsInOrder": [
+            "f9774d6b-6496-4c08-aab9-6ad672a17bbf",
+            "e3b4296e-0942-454b-aa5b-a27f5b01fdc1",
+            "15055828-8864-41cf-a3c6-a3e42455aa7f"
+          ],
+          "portsOutOrder": [
+            "a97ffd6c-420a-4be9-a9b9-f0f2bd21c527",
+            "1f6bd0b0-2cd9-41fc-be34-8ad623267561",
+            "ac3f59bd-aa60-45cf-84f1-54b3ca56f03e"
+          ]
+        }
+      }
+    }
+  ]
+}

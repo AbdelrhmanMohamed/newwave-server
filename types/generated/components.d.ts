@@ -13,6 +13,18 @@ export interface BlogSubject extends Struct.ComponentSchema {
   };
 }
 
+export interface FaqFaqs extends Struct.ComponentSchema {
+  collectionName: 'components_faq_faqs';
+  info: {
+    displayName: 'faqs';
+    icon: 'italic';
+  };
+  attributes: {
+    answer: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    question: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedLocation extends Struct.ComponentSchema {
   collectionName: 'components_shared_locations';
   info: {
@@ -69,6 +81,19 @@ export interface SharedMetaSocial extends Struct.ComponentSchema {
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 60;
       }>;
+  };
+}
+
+export interface SharedPageHeader extends Struct.ComponentSchema {
+  collectionName: 'components_shared_page_headers';
+  info: {
+    displayName: 'Page Header';
+    icon: 'code';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.Media<'images' | 'files'>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -142,10 +167,12 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'blog.subject': BlogSubject;
+      'faq.faqs': FaqFaqs;
       'shared.location': SharedLocation;
       'shared.location2': SharedLocation2;
       'shared.media': SharedMedia;
       'shared.meta-social': SharedMetaSocial;
+      'shared.page-header': SharedPageHeader;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
