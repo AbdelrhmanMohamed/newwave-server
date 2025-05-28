@@ -373,6 +373,54 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
+  collectionName: 'about_us_pages';
+  info: {
+    description: '';
+    displayName: 'About Us Page';
+    pluralName: 'about-us-pages';
+    singularName: 'about-us-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contact_support_image: Schema.Attribute.Media<'images' | 'files'>;
+    contact_support_title: Schema.Attribute.String;
+    cover: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    header: Schema.Attribute.Component<'shared.page-header', false>;
+    impact_highlights: Schema.Attribute.Component<
+      'shared.impact-highlights',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-us-page.about-us-page'
+    > &
+      Schema.Attribute.Private;
+    process: Schema.Attribute.Component<'shared.proceture', true>;
+    process_description: Schema.Attribute.Text;
+    process_headline: Schema.Attribute.String;
+    process_title: Schema.Attribute.String;
+    proceture: Schema.Attribute.Component<'shared.proceture', true>;
+    proceture_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Proceture'>;
+    publishedAt: Schema.Attribute.DateTime;
+    reach_us: Schema.Attribute.String & Schema.Attribute.DefaultTo<'reach us'>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'About Us'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBlogPageBlogPage extends Struct.SingleTypeSchema {
   collectionName: 'blog_pages';
   info: {
@@ -480,6 +528,95 @@ export interface ApiBranchBranch extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCareerPageCareerPage extends Struct.SingleTypeSchema {
+  collectionName: 'career_pages';
+  info: {
+    description: '';
+    displayName: 'Career Page';
+    pluralName: 'career-pages';
+    singularName: 'career-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contact_form_title: Schema.Attribute.String;
+    contact_support_image: Schema.Attribute.Media<'images' | 'files'>;
+    contact_support_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'24/7 Contact Support'>;
+    cover: Schema.Attribute.Media<'images' | 'files'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    header: Schema.Attribute.Component<'shared.page-header', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::career-page.career-page'
+    > &
+      Schema.Attribute.Private;
+    mail_us: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Mail Us'>;
+    publishedAt: Schema.Attribute.DateTime;
+    reach_us: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Reach Us'>;
+    reach_us_description: Schema.Attribute.Text;
+    reach_us_image: Schema.Attribute.Media<'images' | 'files'>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCareerCareer extends Struct.CollectionTypeSchema {
+  collectionName: 'careers';
+  info: {
+    description: '';
+    displayName: 'Career';
+    pluralName: 'careers';
+    singularName: 'career';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date: Schema.Attribute.Date & Schema.Attribute.Required;
+    experience: Schema.Attribute.Integer;
+    image: Schema.Attribute.Media<'images' | 'files'>;
+    job_type: Schema.Attribute.Enumeration<
+      [
+        'Full-Time',
+        'Part-Time',
+        'Contract',
+        'Freelance',
+        'Internship',
+        'Remote',
+        'On-Site',
+        'Hybrid',
+      ]
+    > &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::career.career'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    role: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    skillsets: Schema.Attribute.Blocks;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
   collectionName: 'contact_us_pages';
   info: {
@@ -533,6 +670,7 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
 export interface ApiContactUsContactUs extends Struct.CollectionTypeSchema {
   collectionName: 'contact_uses';
   info: {
+    description: '';
     displayName: 'contact-us';
     pluralName: 'contact-uses';
     singularName: 'contact-us';
@@ -558,7 +696,7 @@ export interface ApiContactUsContactUs extends Struct.CollectionTypeSchema {
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 500;
       }>;
-    phoneNumber: Schema.Attribute.String & Schema.Attribute.Required;
+    phoneNumber: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -645,18 +783,24 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     defaultSeo: Schema.Attribute.Component<'shared.seo', false>;
+    email_career: Schema.Attribute.Email;
+    email1: Schema.Attribute.Email;
+    email2: Schema.Attribute.Email;
+    facebook_link: Schema.Attribute.String;
     favicon: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+    instagram_link: Schema.Attribute.String;
+    linkedin_link: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::global.global'
     > &
       Schema.Attribute.Private;
-    logo: Schema.Attribute.Media<'images' | 'files'> &
-      Schema.Attribute.Required;
+    logo: Schema.Attribute.Media<'images' | 'files'>;
     publishedAt: Schema.Attribute.DateTime;
     siteDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;
+    twitter_link: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1267,9 +1411,12 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::about-us-page.about-us-page': ApiAboutUsPageAboutUsPage;
       'api::blog-page.blog-page': ApiBlogPageBlogPage;
       'api::blog.blog': ApiBlogBlog;
       'api::branch.branch': ApiBranchBranch;
+      'api::career-page.career-page': ApiCareerPageCareerPage;
+      'api::career.career': ApiCareerCareer;
       'api::contact-us-page.contact-us-page': ApiContactUsPageContactUsPage;
       'api::contact-us.contact-us': ApiContactUsContactUs;
       'api::faq-group.faq-group': ApiFaqGroupFaqGroup;

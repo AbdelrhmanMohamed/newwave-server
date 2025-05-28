@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_impact_highlights",
+  "info": {
+    "displayName": "Impact Highlights",
+    "icon": "rocket"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "count": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

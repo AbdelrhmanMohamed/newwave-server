@@ -1,0 +1,87 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_us_pages",
+  "info": {
+    "singularName": "about-us-page",
+    "pluralName": "about-us-pages",
+    "displayName": "About Us Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "About Us"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-header"
+    },
+    "proceture_title": {
+      "type": "string",
+      "default": "Proceture"
+    },
+    "proceture": {
+      "displayName": "Proceture",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.proceture"
+    },
+    "impact_highlights": {
+      "displayName": "Impact Highlights",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.impact-highlights"
+    },
+    "reach_us": {
+      "type": "string",
+      "default": "reach us"
+    },
+    "contact_support_title": {
+      "type": "string"
+    },
+    "contact_support_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "process_title": {
+      "type": "string"
+    },
+    "process_headline": {
+      "type": "string"
+    },
+    "process_description": {
+      "type": "text"
+    },
+    "process": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.proceture"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

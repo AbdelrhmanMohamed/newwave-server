@@ -21,8 +21,11 @@
     "metaImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
-      "allowedTypes": ["images", "files", "videos"]
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     },
     "metaSocial": {
       "type": "component",

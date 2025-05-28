@@ -25,6 +25,18 @@ export interface FaqFaqs extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedImpactHighlights extends Struct.ComponentSchema {
+  collectionName: 'components_shared_impact_highlights';
+  info: {
+    displayName: 'Impact Highlights';
+    icon: 'rocket';
+  };
+  attributes: {
+    count: Schema.Attribute.Integer & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedLocation extends Struct.ComponentSchema {
   collectionName: 'components_shared_locations';
   info: {
@@ -87,6 +99,7 @@ export interface SharedMetaSocial extends Struct.ComponentSchema {
 export interface SharedPageHeader extends Struct.ComponentSchema {
   collectionName: 'components_shared_page_headers';
   info: {
+    description: '';
     displayName: 'Page Header';
     icon: 'code';
   };
@@ -94,6 +107,21 @@ export interface SharedPageHeader extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     icon: Schema.Attribute.Media<'images' | 'files'>;
     title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface SharedProceture extends Struct.ComponentSchema {
+  collectionName: 'components_shared_procetures';
+  info: {
+    displayName: 'Proceture';
+    icon: 'archive';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.Media<'images' | 'files'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
   };
 }
 
@@ -137,8 +165,7 @@ export interface SharedSeo extends Struct.ComponentSchema {
         maxLength: 160;
         minLength: 50;
       }>;
-    metaImage: Schema.Attribute.Media<'images' | 'files' | 'videos'> &
-      Schema.Attribute.Required;
+    metaImage: Schema.Attribute.Media<'images' | 'files'>;
     metaRobots: Schema.Attribute.String;
     metaSocial: Schema.Attribute.Component<'shared.meta-social', true>;
     metaTitle: Schema.Attribute.String &
@@ -168,11 +195,13 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'blog.subject': BlogSubject;
       'faq.faqs': FaqFaqs;
+      'shared.impact-highlights': SharedImpactHighlights;
       'shared.location': SharedLocation;
       'shared.location2': SharedLocation2;
       'shared.media': SharedMedia;
       'shared.meta-social': SharedMetaSocial;
       'shared.page-header': SharedPageHeader;
+      'shared.proceture': SharedProceture;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;

@@ -2,23 +2,28 @@
   "collectionName": "components_shared_page_headers",
   "info": {
     "displayName": "Page Header",
-    "icon": "code"
+    "icon": "code",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "title": {
       "type": "string"
     },
     "description": {
       "type": "text"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
