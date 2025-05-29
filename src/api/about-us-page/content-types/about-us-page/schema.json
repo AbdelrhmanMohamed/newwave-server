@@ -82,6 +82,22 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "proceture_cover": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "impact_highlights_cover": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

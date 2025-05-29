@@ -28,4 +28,13 @@ module.exports = ({ env }) => ({
       defaultReplyTo: "boodyhope@gmail.com",
     },
   },
+  upload: {
+    config: {
+      providerOptions: {
+        local: {
+          maxFileSize: 2 * 1024 * 1024, // 2 megabytes
+        },
+      },
+    },
+  },
 });

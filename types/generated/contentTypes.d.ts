@@ -396,6 +396,7 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
       'shared.impact-highlights',
       true
     >;
+    impact_highlights_cover: Schema.Attribute.Media<'images' | 'files'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -407,6 +408,7 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
     process_headline: Schema.Attribute.String;
     process_title: Schema.Attribute.String;
     proceture: Schema.Attribute.Component<'shared.proceture', true>;
+    proceture_cover: Schema.Attribute.Media<'files' | 'images'>;
     proceture_title: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Proceture'>;
     publishedAt: Schema.Attribute.DateTime;
@@ -415,6 +417,40 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'About Us'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiApplicationApplication extends Struct.CollectionTypeSchema {
+  collectionName: 'applications';
+  info: {
+    description: '';
+    displayName: 'Application';
+    pluralName: 'applications';
+    singularName: 'application';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    career: Schema.Attribute.Relation<'manyToOne', 'api::career.career'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cv: Schema.Attribute.Media<'images' | 'files'> & Schema.Attribute.Required;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    full_name: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::application.application'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text;
+    phone_number: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -580,10 +616,15 @@ export interface ApiCareerCareer extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    applications: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::application.application'
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date: Schema.Attribute.Date & Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
     experience: Schema.Attribute.Integer;
     image: Schema.Attribute.Media<'images' | 'files'>;
     job_type: Schema.Attribute.Enumeration<
@@ -608,6 +649,7 @@ export interface ApiCareerCareer extends Struct.CollectionTypeSchema {
     location: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     role: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     skillsets: Schema.Attribute.Blocks;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1412,6 +1454,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-us-page.about-us-page': ApiAboutUsPageAboutUsPage;
+      'api::application.application': ApiApplicationApplication;
       'api::blog-page.blog-page': ApiBlogPageBlogPage;
       'api::blog.blog': ApiBlogBlog;
       'api::branch.branch': ApiBranchBranch;
