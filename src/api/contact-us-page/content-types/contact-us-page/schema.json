@@ -47,15 +47,6 @@
     "enquiries_title": {
       "type": "string"
     },
-    "enquiries_emails_1": {
-      "type": "email"
-    },
-    "enquiries_emails_2": {
-      "type": "email"
-    },
-    "working_hours": {
-      "type": "string"
-    },
     "branches_title": {
       "type": "string"
     },

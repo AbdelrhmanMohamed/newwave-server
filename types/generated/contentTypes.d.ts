@@ -473,6 +473,7 @@ export interface ApiBlogPageBlogPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    header: Schema.Attribute.Component<'shared.page-header', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -678,8 +679,6 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    enquiries_emails_1: Schema.Attribute.Email;
-    enquiries_emails_2: Schema.Attribute.Email;
     enquiries_title: Schema.Attribute.String;
     header_cover: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
@@ -705,7 +704,6 @@ export interface ApiContactUsPageContactUsPage extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    working_hours: Schema.Attribute.String;
   };
 }
 
@@ -846,6 +844,8 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    working_hours: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Working Hours : 8hrs'>;
   };
 }
 

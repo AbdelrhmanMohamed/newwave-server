@@ -64,6 +64,10 @@
     },
     "email_career": {
       "type": "email"
+    },
+    "working_hours": {
+      "type": "string",
+      "default": "Working Hours : 8hrs"
     }
   }
 }
