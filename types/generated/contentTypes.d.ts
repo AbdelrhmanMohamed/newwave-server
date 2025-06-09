@@ -913,6 +913,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
       false
     >;
     messages: Schema.Attribute.Component<'services.messages', false>;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<1>;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
