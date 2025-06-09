@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_messages",
+  "info": {
+    "displayName": "points",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

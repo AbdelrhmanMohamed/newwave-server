@@ -883,6 +883,78 @@ export interface ApiHeroHero extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiServiceService extends Struct.CollectionTypeSchema {
+  collectionName: 'services';
+  info: {
+    description: '';
+    displayName: 'Service';
+    pluralName: 'services';
+    singularName: 'service';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    feature1: Schema.Attribute.String;
+    feature2: Schema.Attribute.String;
+    feature3: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::service.service'
+    > &
+      Schema.Attribute.Private;
+    main_content: Schema.Attribute.Component<
+      'shared.content-with-video',
+      false
+    >;
+    messages: Schema.Attribute.Component<'services.messages', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    topics: Schema.Attribute.Component<'shared.subject', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiServicesPageServicesPage extends Struct.SingleTypeSchema {
+  collectionName: 'services_pages';
+  info: {
+    displayName: 'Services Page';
+    pluralName: 'services-pages';
+    singularName: 'services-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    cover: Schema.Attribute.Media<'images' | 'files'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    header: Schema.Attribute.Component<'shared.page-header', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::services-page.services-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    title: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Services'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSocialLinkSocialLink extends Struct.CollectionTypeSchema {
   collectionName: 'social_links';
   info: {
@@ -1466,6 +1538,8 @@ declare module '@strapi/strapi' {
       'api::faq-page.faq-page': ApiFaqPageFaqPage;
       'api::global.global': ApiGlobalGlobal;
       'api::hero.hero': ApiHeroHero;
+      'api::service.service': ApiServiceService;
+      'api::services-page.services-page': ApiServicesPageServicesPage;
       'api::social-link.social-link': ApiSocialLinkSocialLink;
       'api::subscriber.subscriber': ApiSubscriberSubscriber;
       'plugin::content-releases.release': PluginContentReleasesRelease;

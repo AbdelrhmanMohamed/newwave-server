@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "main_content": {
+      "displayName": "content with video",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.content-with-video"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "topics": {
+      "displayName": "subject",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.subject"
+    },
+    "feature1": {
+      "type": "string"
+    },
+    "feature2": {
+      "type": "string"
+    },
+    "feature3": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "messages": {
+      "displayName": "messages",
+      "type": "component",
+      "repeatable": false,
+      "component": "services.messages"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

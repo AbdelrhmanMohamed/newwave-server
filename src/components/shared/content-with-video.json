@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_content_with_videos",
+  "info": {
+    "displayName": "content with video",
+    "icon": "play",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "youtube_link": {
+      "type": "string"
+    },
+    "content1": {
+      "type": "text"
+    },
+    "content2": {
+      "type": "text"
+    }
+  }
+}

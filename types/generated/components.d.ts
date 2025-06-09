@@ -25,6 +25,38 @@ export interface FaqFaqs extends Struct.ComponentSchema {
   };
 }
 
+export interface ServicesMessages extends Struct.ComponentSchema {
+  collectionName: 'components_services_messages';
+  info: {
+    description: '';
+    displayName: 'messages';
+    icon: 'bell';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files'>;
+    points: Schema.Attribute.Component<'shared.messages', true>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Impact Message'>;
+  };
+}
+
+export interface SharedContentWithVideo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_content_with_videos';
+  info: {
+    description: '';
+    displayName: 'content with video';
+    icon: 'play';
+  };
+  attributes: {
+    content1: Schema.Attribute.Text;
+    content2: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    youtube_link: Schema.Attribute.String;
+  };
+}
+
 export interface SharedImpactHighlights extends Struct.ComponentSchema {
   collectionName: 'components_shared_impact_highlights';
   info: {
@@ -69,6 +101,19 @@ export interface SharedMedia extends Struct.ComponentSchema {
   };
   attributes: {
     file: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+  };
+}
+
+export interface SharedMessages extends Struct.ComponentSchema {
+  collectionName: 'components_shared_messages';
+  info: {
+    description: '';
+    displayName: 'points';
+    icon: 'file';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -167,7 +212,7 @@ export interface SharedSeo extends Struct.ComponentSchema {
       }>;
     metaImage: Schema.Attribute.Media<'images' | 'files'>;
     metaRobots: Schema.Attribute.String;
-    metaSocial: Schema.Attribute.Component<'shared.meta-social', true>;
+    metaSocial: Schema.Attribute.Component<'shared.meta-social', false>;
     metaTitle: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMaxLength<{
@@ -190,15 +235,35 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSubject extends Struct.ComponentSchema {
+  collectionName: 'components_shared_subjects';
+  info: {
+    displayName: 'subject';
+    icon: 'shield';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'blog.subject': BlogSubject;
       'faq.faqs': FaqFaqs;
+      'services.messages': ServicesMessages;
+      'shared.content-with-video': SharedContentWithVideo;
       'shared.impact-highlights': SharedImpactHighlights;
       'shared.location': SharedLocation;
       'shared.location2': SharedLocation2;
       'shared.media': SharedMedia;
+      'shared.messages': SharedMessages;
       'shared.meta-social': SharedMetaSocial;
       'shared.page-header': SharedPageHeader;
       'shared.proceture': SharedProceture;
@@ -206,6 +271,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.subject': SharedSubject;
     }
   }
 }
