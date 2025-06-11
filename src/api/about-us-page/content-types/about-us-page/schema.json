@@ -27,11 +27,6 @@
         "audios"
       ]
     },
-    "header": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.page-header"
-    },
     "proceture_title": {
       "type": "string",
       "default": "Proceture"
@@ -78,12 +73,82 @@
       "repeatable": true,
       "component": "shared.proceture"
     },
-    "seo": {
+    "proceture_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "impact_highlights_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "about_title": {
+      "type": "string",
+      "required": true
+    },
+    "about_summary": {
+      "type": "blocks"
+    },
+    "core_value_title": {
+      "type": "string"
+    },
+    "core_values": {
+      "displayName": "title_rich",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-rich"
+    },
+    "our_team_title": {
+      "type": "string"
+    },
+    "our_team_description": {
+      "type": "blocks"
+    },
+    "global_presence_title": {
+      "type": "string"
+    },
+    "global_presence_description": {
+      "type": "blocks"
+    },
+    "market_title": {
+      "type": "string"
+    },
+    "market_description": {
+      "type": "blocks"
+    },
+    "vision": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.title-rich"
     },
-    "proceture_cover": {
+    "mission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.title-rich"
+    },
+    "strategy": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.title-rich"
+    },
+    "about_image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "our_team_image": {
       "allowedTypes": [
         "files",
         "images"
@@ -91,7 +156,7 @@
       "type": "media",
       "multiple": false
     },
-    "impact_highlights_cover": {
+    "global_presence_image": {
       "allowedTypes": [
         "images",
         "files"

@@ -252,6 +252,19 @@ export interface SharedSubject extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTitleRich extends Struct.ComponentSchema {
+  collectionName: 'components_shared_title_riches';
+  info: {
+    displayName: 'title_rich';
+    icon: 'archive';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    icon: Schema.Attribute.Media<'images' | 'files'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -272,6 +285,7 @@ declare module '@strapi/strapi' {
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
       'shared.subject': SharedSubject;
+      'shared.title-rich': SharedTitleRich;
     }
   }
 }

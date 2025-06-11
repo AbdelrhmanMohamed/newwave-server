@@ -385,13 +385,20 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    about_image: Schema.Attribute.Media<'images' | 'files'>;
+    about_summary: Schema.Attribute.Blocks;
+    about_title: Schema.Attribute.String & Schema.Attribute.Required;
     contact_support_image: Schema.Attribute.Media<'images' | 'files'>;
     contact_support_title: Schema.Attribute.String;
+    core_value_title: Schema.Attribute.String;
+    core_values: Schema.Attribute.Component<'shared.title-rich', true>;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    header: Schema.Attribute.Component<'shared.page-header', false>;
+    global_presence_description: Schema.Attribute.Blocks;
+    global_presence_image: Schema.Attribute.Media<'images' | 'files'>;
+    global_presence_title: Schema.Attribute.String;
     impact_highlights: Schema.Attribute.Component<
       'shared.impact-highlights',
       true
@@ -403,6 +410,12 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
       'api::about-us-page.about-us-page'
     > &
       Schema.Attribute.Private;
+    market_description: Schema.Attribute.Blocks;
+    market_title: Schema.Attribute.String;
+    mission: Schema.Attribute.Component<'shared.title-rich', false>;
+    our_team_description: Schema.Attribute.Blocks;
+    our_team_image: Schema.Attribute.Media<'files' | 'images'>;
+    our_team_title: Schema.Attribute.String;
     process: Schema.Attribute.Component<'shared.proceture', true>;
     process_description: Schema.Attribute.Text;
     process_headline: Schema.Attribute.String;
@@ -413,13 +426,14 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
       Schema.Attribute.DefaultTo<'Proceture'>;
     publishedAt: Schema.Attribute.DateTime;
     reach_us: Schema.Attribute.String & Schema.Attribute.DefaultTo<'reach us'>;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
+    strategy: Schema.Attribute.Component<'shared.title-rich', false>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'About Us'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    vision: Schema.Attribute.Component<'shared.title-rich', false>;
   };
 }
 
