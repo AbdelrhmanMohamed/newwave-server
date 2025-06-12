@@ -68,6 +68,12 @@
     "working_hours": {
       "type": "string",
       "default": "Working Hours : 8hrs"
+    },
+    "main_address": {
+      "type": "text"
+    },
+    "main_phone": {
+      "type": "string"
     }
   }
 }

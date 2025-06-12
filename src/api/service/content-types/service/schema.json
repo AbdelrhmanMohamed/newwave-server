@@ -64,6 +64,15 @@
     "order": {
       "type": "integer",
       "default": 1
+    },
+    "final_message": {
+      "type": "text"
+    },
+    "call_action_url": {
+      "type": "string"
+    },
+    "call_action_text": {
+      "type": "string"
     }
   }
 }
