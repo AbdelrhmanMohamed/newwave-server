@@ -13,6 +13,14 @@
     },
     "description": {
       "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

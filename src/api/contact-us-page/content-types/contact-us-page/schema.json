@@ -20,14 +20,6 @@
         "files"
       ]
     },
-    "response_time_title": {
-      "type": "string",
-      "required": true
-    },
-    "response_time_description": {
-      "type": "string",
-      "required": true
-    },
     "contact_form_title": {
       "type": "string"
     },
@@ -53,29 +45,15 @@
     "branches_description": {
       "type": "text"
     },
-    "branches": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::branch.branch"
-    },
-    "social_links": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::social-link.social-link"
-    },
-    "response_time_icon": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "files",
-        "images"
-      ]
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-header"
     }
   }
 }

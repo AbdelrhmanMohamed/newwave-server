@@ -4,7 +4,8 @@
   "info": {
     "singularName": "faq-group",
     "pluralName": "faq-groups",
-    "displayName": "FAQ Group"
+    "displayName": "FAQ Group",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,12 +16,13 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "faqs": {
       "displayName": "faqs",
@@ -28,6 +30,9 @@
       "repeatable": true,
       "component": "faq.faqs",
       "required": true
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }

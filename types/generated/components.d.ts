@@ -69,6 +69,17 @@ export interface SharedImpactHighlights extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedList extends Struct.ComponentSchema {
+  collectionName: 'components_shared_lists';
+  info: {
+    displayName: 'list';
+    icon: 'bulletList';
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedLocation extends Struct.ComponentSchema {
   collectionName: 'components_shared_locations';
   info: {
@@ -113,6 +124,7 @@ export interface SharedMessages extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
+    icon: Schema.Attribute.Media<'images' | 'files'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -159,6 +171,7 @@ export interface SharedPageHeader extends Struct.ComponentSchema {
 export interface SharedProceture extends Struct.ComponentSchema {
   collectionName: 'components_shared_procetures';
   info: {
+    description: '';
     displayName: 'Proceture';
     icon: 'archive';
   };
@@ -273,6 +286,7 @@ declare module '@strapi/strapi' {
       'services.messages': ServicesMessages;
       'shared.content-with-video': SharedContentWithVideo;
       'shared.impact-highlights': SharedImpactHighlights;
+      'shared.list': SharedList;
       'shared.location': SharedLocation;
       'shared.location2': SharedLocation2;
       'shared.media': SharedMedia;

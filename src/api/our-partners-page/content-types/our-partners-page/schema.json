@@ -1,0 +1,138 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_partners_pages",
+  "info": {
+    "singularName": "our-partners-page",
+    "pluralName": "our-partners-pages",
+    "displayName": "Our Partners Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Partners"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-header"
+    },
+    "gn_headline": {
+      "type": "string",
+      "default": "Our Global Network"
+    },
+    "gn_title": {
+      "type": "string",
+      "required": true
+    },
+    "gn_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "tp_title": {
+      "type": "string",
+      "default": "Technology Partnership"
+    },
+    "tp_description": {
+      "type": "text"
+    },
+    "tp_technologies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.proceture"
+    },
+    "tp_benefits_title": {
+      "type": "string",
+      "default": "Benefits for Our Clients"
+    },
+    "tp_benefits_description": {
+      "type": "text"
+    },
+    "tp_benefits_points": {
+      "displayName": "list",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list"
+    },
+    "tp_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "collaboration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services.messages"
+    },
+    "c_benefits_title": {
+      "type": "string",
+      "default": "Benefits for Our Clients:"
+    },
+    "c_benefits_points": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list"
+    },
+    "st_headline": {
+      "type": "string",
+      "default": "Strategies for Success"
+    },
+    "st_title": {
+      "type": "string",
+      "default": "Our Partnership Strategy"
+    },
+    "st_description": {
+      "type": "text"
+    },
+    "st_solutions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-rich"
+    },
+    "final_message": {
+      "type": "text"
+    },
+    "call_action_text": {
+      "type": "string"
+    },
+    "call_action_url": {
+      "type": "string"
+    },
+    "partners_title": {
+      "type": "string"
+    },
+    "partners_description": {
+      "type": "text"
+    },
+    "gn_description": {
+      "type": "blocks"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

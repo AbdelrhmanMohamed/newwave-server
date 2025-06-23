@@ -35,11 +35,6 @@
     "is_main": {
       "type": "boolean"
     },
-    "seo": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.seo"
-    },
     "cover": {
       "type": "media",
       "multiple": false,
