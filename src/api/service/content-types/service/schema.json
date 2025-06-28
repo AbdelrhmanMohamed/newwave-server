@@ -73,6 +73,14 @@
     },
     "call_action_text": {
       "type": "string"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
