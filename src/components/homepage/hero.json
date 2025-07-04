@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_homepage_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Ridding the Crest of Innovation in Events & PR"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "default": "Pioneering unforgettable experiences in Saudi Arabia and beyond, powered by technology and visionary expertise."
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string",
+      "default": "New Wave"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "button_link": {
+      "type": "string",
+      "default": "/projects"
+    },
+    "highlight_text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "displayName": "hero",
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.hero"
+    },
+    "partners_title": {
+      "type": "string",
+      "required": true,
+      "default": "Associated Partners"
+    },
+    "key_services": {
+      "displayName": "Key Services",
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.key-services"
+    },
+    "projects_headline": {
+      "type": "string",
+      "default": "Portfolio"
+    },
+    "projects_title": {
+      "type": "string",
+      "default": "Our Project Portfolio"
+    },
+    "projects_description": {
+      "type": "text"
+    },
+    "partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partner.partner"
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "projects-page",
     "pluralName": "projects-pages",
-    "displayName": "Projects Page"
+    "displayName": "Projects Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,12 +16,13 @@
       "required": true
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "header": {
       "type": "component",
@@ -37,6 +39,16 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "final_message": {
+      "type": "text",
+      "required": true
+    },
+    "call_action_text": {
+      "type": "string"
+    },
+    "call_action_url": {
+      "type": "string"
     }
   }
 }

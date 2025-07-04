@@ -25,6 +25,44 @@ export interface FaqFaqs extends Struct.ComponentSchema {
   };
 }
 
+export interface HomepageHero extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_heroes';
+  info: {
+    description: '';
+    displayName: 'hero';
+    icon: 'archive';
+  };
+  attributes: {
+    button_link: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'/projects'>;
+    button_text: Schema.Attribute.String;
+    cover: Schema.Attribute.Media<'images' | 'files'>;
+    description: Schema.Attribute.Text &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Pioneering unforgettable experiences in Saudi Arabia and beyond, powered by technology and visionary expertise.'>;
+    headline: Schema.Attribute.String & Schema.Attribute.DefaultTo<'New Wave'>;
+    highlight_text: Schema.Attribute.String;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Ridding the Crest of Innovation in Events & PR'>;
+  };
+}
+
+export interface HomepageKeyServices extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_key_services';
+  info: {
+    displayName: 'Key Services';
+    icon: 'cog';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    icon: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface ServicesMessages extends Struct.ComponentSchema {
   collectionName: 'components_services_messages';
   info: {
@@ -283,6 +321,8 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'blog.subject': BlogSubject;
       'faq.faqs': FaqFaqs;
+      'homepage.hero': HomepageHero;
+      'homepage.key-services': HomepageKeyServices;
       'services.messages': ServicesMessages;
       'shared.content-with-video': SharedContentWithVideo;
       'shared.impact-highlights': SharedImpactHighlights;

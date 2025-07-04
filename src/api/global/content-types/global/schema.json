@@ -74,6 +74,9 @@
     },
     "main_phone": {
       "type": "string"
+    },
+    "youtube_link": {
+      "type": "string"
     }
   }
 }

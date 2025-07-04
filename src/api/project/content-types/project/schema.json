@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project"
+    "displayName": "Project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,25 +23,27 @@
       "required": true
     },
     "main_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "content": {
       "type": "blocks"
     },
     "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "youtube_link": {
       "type": "string",
@@ -53,12 +56,13 @@
       "type": "string"
     },
     "sign_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "sign_author": {
       "type": "string"
@@ -66,9 +70,17 @@
     "sign_role": {
       "type": "string"
     },
+    "project_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-category.project-category"
+    },
+    "client": {
+      "type": "string"
+    },
     "seo": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "shared.seo"
     }
   }
