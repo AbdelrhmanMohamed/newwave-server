@@ -25,6 +25,22 @@ export interface FaqFaqs extends Struct.ComponentSchema {
   };
 }
 
+export interface HomepageContact extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_contacts';
+  info: {
+    description: '';
+    displayName: 'contact';
+    icon: 'code';
+  };
+  attributes: {
+    button_link: Schema.Attribute.String;
+    button_text: Schema.Attribute.String;
+    cover: Schema.Attribute.Media<'images' | 'files'>;
+    headline: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface HomepageHero extends Struct.ComponentSchema {
   collectionName: 'components_homepage_heroes';
   info: {
@@ -45,6 +61,7 @@ export interface HomepageHero extends Struct.ComponentSchema {
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Ridding the Crest of Innovation in Events & PR'>;
+    youtube_link: Schema.Attribute.String;
   };
 }
 
@@ -60,6 +77,24 @@ export interface HomepageKeyServices extends Struct.ComponentSchema {
       Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     url: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageMarketing extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_marketings';
+  info: {
+    description: '';
+    displayName: 'marketing';
+    icon: 'heart';
+  };
+  attributes: {
+    avatars: Schema.Attribute.Media<'images' | 'files', true>;
+    cover: Schema.Attribute.Media<'images' | 'files'>;
+    image: Schema.Attribute.Media<'images' | 'files'>;
+    titleLine1: Schema.Attribute.String;
+    titleLine2: Schema.Attribute.String;
+    titleLine3: Schema.Attribute.String;
+    youtube_link: Schema.Attribute.String;
   };
 }
 
@@ -321,8 +356,10 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'blog.subject': BlogSubject;
       'faq.faqs': FaqFaqs;
+      'homepage.contact': HomepageContact;
       'homepage.hero': HomepageHero;
       'homepage.key-services': HomepageKeyServices;
+      'homepage.marketing': HomepageMarketing;
       'services.messages': ServicesMessages;
       'shared.content-with-video': SharedContentWithVideo;
       'shared.impact-highlights': SharedImpactHighlights;

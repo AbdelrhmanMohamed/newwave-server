@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "achievements",
+  "info": {
+    "singularName": "achievement",
+    "pluralName": "achievements",
+    "displayName": "achievement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "integer",
+      "unique": false,
+      "required": true
+    },
+    "suffix": {
+      "type": "string"
+    }
+  }
+}

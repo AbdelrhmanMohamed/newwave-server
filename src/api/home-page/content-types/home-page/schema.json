@@ -43,6 +43,77 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::partner.partner"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "services_headline": {
+      "type": "string",
+      "required": true,
+      "default": "Services"
+    },
+    "services_title": {
+      "type": "string",
+      "required": true,
+      "default": "What We Have to Offer"
+    },
+    "testimonials_headline": {
+      "type": "string",
+      "default": "Testimonials"
+    },
+    "testimonials_title": {
+      "type": "string",
+      "default": "Happy Words from Happy Clients"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    },
+    "contact": {
+      "displayName": "contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.contact"
+    },
+    "blogs_headline": {
+      "type": "string",
+      "default": "Blogs"
+    },
+    "blogs_title": {
+      "type": "string",
+      "default": "Digital World Blogs"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "marketing": {
+      "displayName": "marketing",
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.marketing"
+    },
+    "achievements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::achievement.achievement"
+    },
+    "testimonials_image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

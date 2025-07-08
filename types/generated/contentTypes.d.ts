@@ -438,6 +438,36 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAchievementAchievement extends Struct.CollectionTypeSchema {
+  collectionName: 'achievements';
+  info: {
+    displayName: 'achievement';
+    pluralName: 'achievements';
+    singularName: 'achievement';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::achievement.achievement'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    suffix: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    value: Schema.Attribute.Integer & Schema.Attribute.Required;
+  };
+}
+
 export interface ApiApplicationApplication extends Struct.CollectionTypeSchema {
   collectionName: 'applications';
   info: {
@@ -886,6 +916,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whatsapp: Schema.Attribute.String;
     working_hours: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Working Hours : 8hrs'>;
     youtube_link: Schema.Attribute.String;
@@ -938,6 +969,16 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    achievements: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::achievement.achievement'
+    >;
+    blogs: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'>;
+    blogs_headline: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Blogs'>;
+    blogs_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Digital World Blogs'>;
+    contact: Schema.Attribute.Component<'homepage.contact', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -949,16 +990,34 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       'api::home-page.home-page'
     > &
       Schema.Attribute.Private;
+    marketing: Schema.Attribute.Component<'homepage.marketing', false>;
     partners: Schema.Attribute.Relation<'oneToMany', 'api::partner.partner'>;
     partners_title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Associated Partners'>;
+    projects: Schema.Attribute.Relation<'oneToMany', 'api::project.project'>;
     projects_description: Schema.Attribute.Text;
     projects_headline: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Portfolio'>;
     projects_title: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Our Project Portfolio'>;
     publishedAt: Schema.Attribute.DateTime;
+    services: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
+    services_headline: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Services'>;
+    services_title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'What We Have to Offer'>;
+    testimonials: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::testimonial.testimonial'
+    >;
+    testimonials_headline: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Testimonials'>;
+    testimonials_image: Schema.Attribute.Media<'images' | 'files'>;
+    testimonials_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Happy Words from Happy Clients'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1857,6 +1916,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-us-page.about-us-page': ApiAboutUsPageAboutUsPage;
+      'api::achievement.achievement': ApiAchievementAchievement;
       'api::application.application': ApiApplicationApplication;
       'api::blog-page.blog-page': ApiBlogPageBlogPage;
       'api::blog.blog': ApiBlogBlog;

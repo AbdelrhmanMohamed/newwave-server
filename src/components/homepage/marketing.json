@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_homepage_marketings",
+  "info": {
+    "displayName": "marketing",
+    "icon": "heart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titleLine1": {
+      "type": "string"
+    },
+    "titleLine2": {
+      "type": "string"
+    },
+    "titleLine3": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "avatars": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "youtube_link": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
