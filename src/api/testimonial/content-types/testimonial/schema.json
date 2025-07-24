@@ -32,6 +32,14 @@
     },
     "rate": {
       "type": "float"
+    },
+    "post_image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -1003,6 +1003,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       Schema.Attribute.DefaultTo<'Our Project Portfolio'>;
     publishedAt: Schema.Attribute.DateTime;
     services: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
+    services_cover: Schema.Attribute.Media<'images' | 'files'>;
     services_headline: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Services'>;
@@ -1398,6 +1399,7 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     message: Schema.Attribute.Text;
     position: Schema.Attribute.String;
+    post_image: Schema.Attribute.Media<'images' | 'files'>;
     publishedAt: Schema.Attribute.DateTime;
     rate: Schema.Attribute.Float;
     updatedAt: Schema.Attribute.DateTime;
